@@ -1,0 +1,8 @@
+#installation de streamlit
+pip install streamlit
+
+#installation de pandas
+pip install pandas
+
+#installation de plotly
+pip install plotly
