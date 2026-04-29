@@ -38,13 +38,13 @@ else:
     st.warning("Aucune donnée disponible pour le moment.")
 
 # --- APERÇU ---
-st.subheader("🗂 Aperçu des données")
+st.subheader(" Aperçu des données")
 
 if os.path.exists("data.csv"):
     st.dataframe(df.head())
 
 # --- NAVIGATION ---
-st.subheader("🚀 Accès rapide")
+st.subheader(" Accès rapide")
 
 col1, col2 = st.columns(2)
 
