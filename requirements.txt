@@ -1,8 +1,3 @@
-#installation de streamlit
-pip install streamlit
-
-#installation de pandas
-pip install pandas
-
-#installation de plotly
-pip install plotly
+streamlit==1.37.0
+pandas==2.2.2
+plotly==5.22.0
