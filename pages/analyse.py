@@ -4,6 +4,15 @@ import pandas as pd
 
 st.title("Analyse des données - Étudiants & IA")
 
+# --- OBJECTIF ---
+st.subheader("But de l'analyse")
+st.info("""
+Analyser le comportement des étudiants face aux outils d’intelligence artificielle afin de :
+- Évaluer leur niveau d’éthique
+- Mesurer leur maîtrise des outils IA
+- Identifier les tendances d’utilisation
+""")
+
 # Chargement
 df = pd.read_csv("data.csv")
 
@@ -124,28 +133,4 @@ st.plotly_chart(fig)
 
 
 
-#2) Satisfaction vs culture IA
-#uestion : ceux qui maîtrisent mieux l’IA sont-ils plus satisfaits ?
-satisfaction_culture = df.groupby("culture_ia")["satisfaction"].mean().reset_index()
-satisfaction_culture["culture_label"] = satisfaction_culture["culture_ia"].map({
-    True: "Bonne maîtrise IA",
-    False: "Faible maîtrise IA"
-})
-fig = px.bar(
-    satisfaction_culture,
-    x="culture_label",
-    y="satisfaction",
-    title="Satisfaction moyenne selon la maîtrise de l'IA",
-    labels={
-        "culture_label": "Niveau de maîtrise",
-        "satisfaction": "Satisfaction moyenne"
-    },
-    text_auto=True
-)
-st.plotly_chart(fig)
 
-#3) Identifier les profils “à risque”
-
-risque = df[(df["ethique_valide"] == False) & (df["culture_ia"] == False)]
-st.subheader("Étudiants à risque")
-st.dataframe(risque)
