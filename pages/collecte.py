@@ -13,7 +13,7 @@ frequence = st.select_slider("Avec quel fréquence les utilisez vous?", options 
 satisfaction = st.slider("Sur une échelle de 0 à 100 quel est votre de niveau de satisfaction globale quant aux résultats fournis par les outils d’IA que vous utilisez?",min_value=0, max_value=100, value= 50, step=1) 
 prompt = st.radio("Sais tu écrire un bon prompt",["oui un peu", "oui très bien" , "non"]) 
 methodes_dapprentissage = st.multiselect("Comment apprends tu avec l’IA? Tu l'utilises pour:", ["faire des résumés de cours","générer des exercices corriges","expliquer un concept comme un tuteur le ferai"]) 
-fonct_avancees = st.multiselect("Quelles sont les fonctionnalités avancées que vous avez déja utilisé?",["Generation d'images","Analyse de documents pdf", "Création de GPTs personnalisés","Recherche internet integré","Aucunes"]) 
+fonct_avancees = st.multiselect("Quelles sont les fonctionnalités avancées que vous avez déja utilisé?",["Generation d'images","Analyse de documents pdf", "Création de GPTs personnalisés","Recherche internet integré"]) 
 ethique1 = st.radio("Es ce que tu précises toujours quand tu fais un devoir à remettre avec L’IA?",["oui","non"]) 
 ethique2 = st.radio("Es tu capable de refaire les TP ou devoirs que tu as déjà réaliser avec l’IA?",["oui","non"]) 
 ethique3 = st.radio("Es ce que tu as le droit d’envoyer une donnée privée dans une IA publique?",["oui","non"]) 
