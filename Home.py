@@ -13,11 +13,7 @@ Cette application permet de :
 - Visualiser les résultats sous forme de graphiques
 """)
 
-# --- APERÇU ---
-st.subheader("🗂 Aperçu des données")
 
-if os.path.exists("data.csv"):
-    st.dataframe(df.head())
     
 
 # --- INDICATEURS RAPIDES ---
@@ -40,6 +36,12 @@ if os.path.exists("data.csv"):
 
 else:
     st.warning("Aucune donnée disponible pour le moment.")
+
+# --- APERÇU ---
+st.subheader("🗂 Aperçu des données")
+
+if os.path.exists("data.csv"):
+    st.dataframe(df.head())
 
 # --- NAVIGATION ---
 st.subheader("🚀 Accès rapide")
