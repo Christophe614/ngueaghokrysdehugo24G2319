@@ -5,7 +5,7 @@ import os
 st.set_page_config(page_title="Projet IA & Étudiants", layout="wide")
 
 # --- HEADER ---
-st.title("📊 Étude sur l'utilisation de l'IA chez les étudiants")
+st.title(" Étude sur l'utilisation de l'IA chez les étudiants de la filiere informatique")
 st.markdown("""
 Cette application permet de :
 - Collecter des données sur l’usage de l’IA
@@ -13,27 +13,12 @@ Cette application permet de :
 - Visualiser les résultats sous forme de graphiques
 """)
 
-# --- OBJECTIF ---
-st.subheader("🎯 Objectif du projet")
-st.info("""
-Analyser le comportement des étudiants face aux outils d’intelligence artificielle :
-- Évaluer leur niveau d’éthique
-- Mesurer leur maîtrise des outils IA
-- Identifier les tendances d’utilisation
-""")
+# --- APERÇU ---
+st.subheader("🗂 Aperçu des données")
 
-# --- NAVIGATION ---
-st.subheader("🚀 Accès rapide")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    if st.button("📥 Accéder au formulaire de collecte"):
-        st.switch_page("pages/collecte.py")
-
-with col2:
-    if st.button("📊 Voir le tableau de bord d’analyse"):
-        st.switch_page("pages/analyse.py")
+if os.path.exists("data.csv"):
+    st.dataframe(df.head())
+    
 
 # --- INDICATEURS RAPIDES ---
 st.subheader("📈 Indicateurs globaux")
@@ -56,8 +41,16 @@ if os.path.exists("data.csv"):
 else:
     st.warning("Aucune donnée disponible pour le moment.")
 
-# --- APERÇU ---
-st.subheader("🗂 Aperçu des données")
+# --- NAVIGATION ---
+st.subheader("🚀 Accès rapide")
 
-if os.path.exists("data.csv"):
-    st.dataframe(df.head())
+col1, col2 = st.columns(2)
+
+with col1:
+    if st.button("Accéder au formulaire de collecte"):
+        st.switch_page("pages/collecte.py")
+
+with col2:
+    if st.button(" Voir le tableau de bord d’analyse"):
+        st.switch_page("pages/analyse.py")
+
