@@ -1,0 +1,10 @@
+niveau_etude,outils,meilleur_outil,satisfaction,prompt,methodes_dapprentissage,fonctionnalites_avancees,ethique1,ethique2,ethique3,ethique4,score_ethique
+L1,DeepSeek,ChatGPT,50,oui un peu,faire des résumés de cours,Generation d'images,non,non,non,oui,5
+L1,"DeepSeek,chatGPT",chatGPT,71,oui très bien,"faire des résumés de cours,expliquer un concept comme un tuteur le ferai","Recherche internet integré,Analyse de documents pdf,Generation d'images",oui,oui,non,non,20
+L2,"chatGPT,Claude,DeepSeek,Gemini,NoteBookLM",chatGPT,50,oui très bien,"faire des résumés de cours,générer des exercices corriges,expliquer un concept comme un tuteur le ferai","Generation d'images,Analyse de documents pdf,Recherche internet integré",non,oui,non,non,15
+L1,ChatGPT,ChatGPT,66,oui un peu,"faire des résumés de cours,générer des exercices corriges","Generation d'images,Analyse de documents pdf,Recherche internet integré",non,non,non,oui,5
+L2,"ChatGPT,Claude,DeepSeek,Gemini",ChatGPT,60,oui très bien,"faire des résumés de cours,générer des exercices corriges,expliquer un concept comme un tuteur le ferai","Generation d'images,Analyse de documents pdf,Recherche internet integré",non,non,non,oui,5
+L3,"ChatGPT,Claude,DeepSeek,NoteBookLM,Gemini",ChatGPT,50,oui très bien,"faire des résumés de cours,générer des exercices corriges,expliquer un concept comme un tuteur le ferai",aucune,oui,oui,non,non,20
+M1,"ChatGPT,Claude,DeepSeek,NoteBookLM,Gemini",Gemini,60,oui très bien,"faire des résumés de cours,expliquer un concept comme un tuteur le ferai","Analyse de documents pdf,Création de GPTs personnalisés,Generation d'images,Recherche internet integré",oui,oui,non,non,20
+L3,"ChatGPT,DeepSeek,Claude,Gemini",Claude,40,oui très bien,"faire des résumés de cours,expliquer un concept comme un tuteur le ferai",aucune,non,oui,non,oui,10
+L1,"ChatGPT,Gemini",ChatGPT,30,non,"faire des résumés de cours,expliquer un concept comme un tuteur le ferai,générer des exercices corriges",aucune,non,non,non,oui,5
